@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="simple mixi Appli">
+    <Require feature="opensocial-0.8"/>
+    <Require feature="dynamic-height"/>
+  </ModulePrefs>
+  <Content type="html">
+  <![CDATA[
+<script src="jsdeferred.js"></script>
+<script>
+var s = document.createElement("script");
+s.src = "mymixi_community.js?" + new Date().getTime();
+document.body.appendChild(s);
+</script>
+<h1>マイミクのコミュニティ</h1>
+<button onclick="calc_rank()">reload</button>
+<div id="output"></div>
+  ]]>
+  </Content>
+</Module>
